@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Cantaritos Mexican Grill | Medina, OH</title>
+    <meta name="description" content="Authentic Mexican cuisine, sizzling specialties, and signature cantaritos in Medina, Ohio. Order online for pickup or visit us at 930 W Liberty St.">
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1788538197/LosCantaritosMexGrillLOGO_1_keuhde.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Los Cantaritos Mexican Grill | Medina, OH">
+    <meta property="og:description" content="Authentic Mexican cuisine, sizzling specialties, and signature cantaritos in Medina, Ohio.">
+    <meta property="og:image" content="https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538173/IMG-20260901-WA0040_1_t6bmmz.jpg">
+    <meta property="og:type" content="restaurant">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Los Cantaritos Mexican Grill",
+      "image": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538173/IMG-20260901-WA0040_1_t6bmmz.jpg",
+      "telephone": "330-952-0464",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "930 W Liberty St",
+        "addressLocality": "Medina",
+        "addressRegion": "OH",
+        "postalCode": "44256",
+        "addressCountry": "US"
+      },
+      "servesCuisine": "Mexican",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday"],
+          "opens": "11:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "11:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "22:00"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-cream: #FDFBF7;
+            --bg-cream-tint: #F7F2E8;
+            --bg-card: #FFFFFF;
+            --color-rojo: #C62828;
+            --color-rojo-hover: #8E0000;
+            --color-verde: #4B6F44;
+            --color-verde-light: #5E8756;
+            --color-cafe: #2E221B;
+            --color-cafe-soft: #63534B;
+            --color-orange: #E67E22;
+            --color-gold: #DDA15E;
+            --color-border: #E8DFD3;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --shadow-soft: 0 10px 30px -8px rgba(46, 34, 27, 0.08);
+            --shadow-card: 0 16px 40px -10px rgba(46, 34, 27, 0.12);
+            --radius-main: 22px;
+            --radius-card: 18px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-cafe);
+            background-color: var(--bg-cream);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.25s ease;
+        }
+
+        /* Top Announcement Bar */
+        .top-bar {
+            background-color: var(--color-cafe);
+            color: #F8F5EE;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 2px solid var(--color-orange);
+        }
+
+        .top-bar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-bar-left, .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-bar-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-bar-item svg {
+            fill: var(--color-gold);
+            width: 15px;
+            height: 15px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(253, 251, 247, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--color-border);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 10px 0;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand-logo-img {
+            height: 52px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(46, 34, 27, 0.15));
+        }
+
+        .brand-text {
+            font-family: var(--font-heading);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-cafe);
+            letter-spacing: -0.3px;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.15;
+        }
+
+        .brand-text span {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-verde);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--color-cafe);
+            letter-spacing: 0.3px;
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2.5px;
+            background: var(--color-rojo);
+            border-radius: 2px;
+            transition: width 0.25s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--color-rojo);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            background: var(--bg-cream-tint);
+            border: 1px solid var(--color-border);
+            border-radius: 20px;
+            padding: 3px 6px;
+            gap: 4px;
+            margin-left: 8px;
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 14px;
+            color: var(--color-cafe-soft);
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--color-verde);
+            color: #FFFFFF;
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .toggler-bar {
+            width: 28px;
+            height: 2.5px;
+            background-color: var(--color-cafe);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 100px 0 130px;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(46, 34, 27, 0.72) 0%,
+                rgba(46, 34, 27, 0.6) 50%,
+                rgba(46, 34, 27, 0.88) 100%
+            );
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 960px;
+            margin: 0 auto;
+            color: #FFFFFF;
+            padding: 0 20px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(221, 161, 94, 0.4);
+            padding: 8px 22px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+            font-size: 13.5px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+        }
+
+        .hero-logo-wrapper {
+            margin-bottom: 24px;
+        }
+
+        .hero-logo {
+            max-height: 140px;
+            width: auto;
+            margin: 0 auto;
+            filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5));
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(38px, 6vw, 68px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-lead {
+            font-size: clamp(17px, 2.5vw, 21px);
+            color: #F4EFE6;
+            max-width: 720px;
+            margin: 0 auto 36px;
+            font-weight: 400;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-action-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        /* ONLY ONE ONLINE ORDERING BUTTON ON WEB */
+        .btn-order-main {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background-color: var(--color-rojo);
+            color: #FFFFFF;
+            padding: 16px 38px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 15.5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 25px rgba(198, 40, 40, 0.42);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-order-main:hover {
+            background-color: var(--color-rojo-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px rgba(142, 0, 0, 0.5);
+            border-color: var(--color-gold);
+            color: #FFFFFF;
+        }
+
+        .btn-order-main svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            transition: transform 0.25s ease;
+        }
+
+        .btn-order-main:hover svg {
+            transform: scale(1.15);
+        }
+
+        .btn-secondary-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(6px);
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
+            color: #FFFFFF;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-link:hover {
+            background: #FFFFFF;
+            color: var(--color-cafe);
+            border-color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        .hero-address-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: #E2D9CC;
+            font-size: 15px;
+            font-weight: 500;
+            background: rgba(46, 34, 27, 0.5);
+            padding: 8px 20px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-address-badge svg {
+            width: 17px;
+            height: 17px;
+            fill: var(--color-gold);
+        }
+
+        .hero-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 0;
+            z-index: 3;
+        }
+
+        .hero-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+            fill: var(--bg-cream);
+        }
+
+        /* Section Header Layout */
+        .section-header {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 52px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-verde);
+            margin-bottom: 12px;
+        }
+
+        .eyebrow::before, .eyebrow::after {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--color-gold);
+        }
+
+        .main-heading {
+            font-family: var(--font-heading);
+            font-size: clamp(32px, 4.2vw, 44px);
+            font-weight: 700;
+            color: var(--color-cafe);
+            line-height: 1.22;
+        }
+
+        /* About Section - Modern Warm Textured Clay Gradient */
+        .about-section {
+            padding: 100px 0 110px;
+            position: relative;
+            background: 
+                radial-gradient(ellipse at 85% 15%, rgba(221, 161, 94, 0.14) 0%, transparent 55%),
+                radial-gradient(ellipse at 15% 85%, rgba(75, 111, 68, 0.12) 0%, transparent 60%),
+                linear-gradient(180deg, var(--bg-cream) 0%, #F5EFE4 100%);
+            overflow: hidden;
+        }
+
+        .about-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-main);
+            padding: 64px 60px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--color-border);
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 56px;
+            align-items: center;
+            position: relative;
+        }
+
+        .about-text-content h2 {
+            font-family: var(--font-heading);
+            font-size: 38px;
+            font-weight: 700;
+            color: var(--color-cafe);
+            margin-bottom: 24px;
+            line-height: 1.25;
+        }
+
+        .about-body-text {
+            font-size: 17.5px;
+            line-height: 1.85;
+            color: var(--color-cafe-soft);
+            margin-bottom: 0;
+        }
+
+        .about-visuals {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            position: relative;
+        }
+
+        .about-img-frame {
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(46, 34, 27, 0.12);
+            border: 4px solid #FFFFFF;
+            position: relative;
+        }
+
+        .about-img-frame img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .about-img-frame:hover img {
+            transform: scale(1.04);
+        }
+
+        .about-badge-floating {
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+            background: var(--color-rojo);
+            color: #FFFFFF;
+            padding: 14px 22px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(198, 40, 40, 0.35);
+            z-index: 2;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 90px 0;
+            background: var(--bg-cream-tint);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            position: relative;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--color-border);
+            transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+            position: relative;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card);
+            border-color: var(--color-gold);
+        }
+
+        .gallery-img-wrapper {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+
+        .gallery-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-card:hover .gallery-img-wrapper img {
+            transform: scale(1.08);
+        }
+
+        /* Google Reviews Section with Automatic Smooth Carousel */
+        .reviews-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-cream-tint) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .google-api-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 48px;
+            background: #FFFFFF;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 18px 28px;
+            border-radius: 50px;
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .google-icon-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .google-score-summary {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .google-score-num {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--color-cafe);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+        }
+
+        .stars-row {
+            display: inline-flex;
+            gap: 3px;
+        }
+
+        .star-svg {
+            width: 17px;
+            height: 17px;
+            fill: #FBBC04;
+        }
+
+        .google-score-label {
+            font-size: 13px;
+            color: var(--color-cafe-soft);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        /* Carousel Component Styles */
+        .carousel-wrapper {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 4px;
+        }
+
+        .carousel-track-container {
+            overflow: hidden;
+            width: 100%;
+            border-radius: var(--radius-card);
+            padding: 14px 0 24px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            will-change: transform;
+            gap: 24px;
+        }
+
+        .carousel-slide {
+            flex: 0 0 calc(33.333% - 16px);
+            min-width: 320px;
+            display: flex;
+        }
+
+        .review-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-card);
+            padding: 30px;
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-card);
+        }
+
+        .reviewer-meta {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .reviewer-avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-rojo) 0%, var(--color-orange) 100%);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .reviewer-info h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-cafe);
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .google-badge-check {
+            width: 15px;
+            height: 15px;
+            fill: #1a73e8;
+            vertical-align: middle;
+        }
+
+        .reviewer-subtitle {
+            font-size: 12.5px;
+            color: var(--color-cafe-soft);
+            margin-top: 3px;
+        }
+
+        .review-stars-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .review-date {
+            font-size: 12.5px;
+            color: #8C7B70;
+        }
+
+        .review-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 14px;
+        }
+
+        .review-tag {
+            font-size: 11.5px;
+            font-weight: 600;
+            background: var(--bg-cream);
+            color: var(--color-cafe-soft);
+            padding: 3px 9px;
+            border-radius: 20px;
+            border: 1px solid var(--color-border);
+        }
+
+        .review-body {
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: var(--color-cafe);
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .review-metrics {
+            background: var(--bg-cream-tint);
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 12.5px;
+            color: var(--color-cafe-soft);
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .review-metric-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .review-metric-row strong {
+            color: var(--color-cafe);
+        }
+
+        /* Carousel Navigation Controls */
+        .carousel-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .carousel-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1px solid var(--color-border);
+            color: var(--color-cafe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(46, 34, 27, 0.08);
+            transition: all 0.25s ease;
+        }
+
+        .carousel-btn:hover {
+            background: var(--color-rojo);
+            color: #FFFFFF;
+            border-color: var(--color-rojo);
+            transform: scale(1.05);
+        }
+
+        .carousel-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .carousel-indicators {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--color-border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: var(--color-rojo);
+            width: 24px;
+            border-radius: 10px;
+        }
+
+        /* Info & Location Section */
+        .info-section {
+            padding: 90px 0 110px;
+            background-color: var(--bg-cream-tint);
+            position: relative;
+        }
+
+        .info-panel {
+            background: #FFFFFF;
+            border-radius: var(--radius-main);
+            padding: 56px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--color-border);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            position: relative;
+        }
+
+        .info-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 16px;
+            position: relative;
+        }
+
+        .info-column:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: var(--color-border);
+        }
+
+        .info-icon-bubble {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: var(--bg-cream);
+            border: 2px solid var(--color-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 22px;
+            color: var(--color-rojo);
+            box-shadow: 0 6px 16px rgba(46, 34, 27, 0.06);
+        }
+
+        .info-icon-bubble svg {
+            width: 30px;
+            height: 30px;
+            fill: currentColor;
+        }
+
+        .info-column h3 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-cafe);
+            margin-bottom: 14px;
+        }
+
+        .info-column-content {
+            font-size: 15.5px;
+            color: var(--color-cafe-soft);
+            line-height: 1.7;
+        }
+
+        .info-column-content a {
+            color: var(--color-rojo);
+            font-weight: 700;
+        }
+
+        .info-column-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: var(--color-cafe);
+            color: #E2D9CC;
+            padding: 70px 0 30px;
+            border-top: 4px solid var(--color-rojo);
+            position: relative;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand h4 {
+            font-family: var(--font-heading);
+            font-size: 26px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 14.5px;
+            line-height: 1.7;
+            color: #BDB0A4;
+            margin-bottom: 24px;
+        }
+
+        .footer-heading {
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 32px;
+            height: 2px;
+            background: var(--color-gold);
+        }
+
+        .footer-details {
+            font-size: 14.5px;
+            line-height: 1.8;
+            color: #BDB0A4;
+        }
+
+        .footer-details a {
+            color: #FFFFFF;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            transition: all 0.25s ease;
+        }
+
+        .social-link:hover {
+            background: var(--color-rojo);
+            border-color: var(--color-rojo);
+            transform: translateY(-3px);
+        }
+
+        .social-link svg {
+            width: 19px;
+            height: 19px;
+            fill: currentColor;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: #9E9084;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .menutech-link {
+            color: var(--color-gold);
+            font-weight: 700;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+
+        .menutech-link:hover {
+            color: #FFFFFF;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .about-card {
+                grid-template-columns: 1fr;
+                padding: 44px 32px;
+                gap: 40px;
+            }
+
+            .carousel-slide {
+                flex: 0 0 calc(50% - 12px);
+            }
+
+            .info-panel {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 40px 30px;
+            }
+
+            .info-column:not(:last-child)::after {
+                display: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: var(--bg-cream);
+                flex-direction: column;
+                padding: 28px 24px;
+                gap: 20px;
+                box-shadow: 0 16px 30px rgba(0,0,0,0.15);
+                border-bottom: 2px solid var(--color-border);
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .top-bar-left {
+                display: none;
+            }
+
+            .top-bar-inner {
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding: 70px 0 100px;
+            }
+
+            .carousel-slide {
+                flex: 0 0 100%;
+                min-width: 100%;
+            }
+
+            .about-badge-floating {
+                position: static;
+                transform: none;
+                display: inline-block;
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+
+    <script>
+    window.MENU_TECH_STATE = {
+        "lang": "en",
+        "showReservations": false,
+        "showAbout": true,
+        "showPromo": false,
+        "showGallery": true,
+        "showCatering": false,
+        "showInfo": true,
+        "showDelivery": false,
+        "cuid": "00000",
+        "ruid": "00000",
+        "title": "Los Cantaritos Mexican Grill",
+        "logoImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538197/LosCantaritosMexGrillLOGO_1_keuhde.png",
+        "heroAddress": "930 W Liberty St, Medina, OH 44256",
+        "heroImg": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538173/IMG-20260901-WA0040_1_t6bmmz.jpg",
+        "aboutImg1": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538166/IMG-20260901-WA0024_1_a0u1sh.jpg",
+        "aboutImg2": "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538168/IMG-20260901-WA0020_1_i9ffqy.jpg",
+        "gallery": [
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538217/613113872_1483909783743976_6846226994644003508_n_bswjeo.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538217/609057193_1483909847077303_2294412063372647978_n_uavipc.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538218/605787149_1477849841016637_2601460680828186943_n_gc9min.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538219/495119243_1256138346521122_5749637179475656615_n_mogtgt.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538219/494529106_1256138336521123_8057465987856009086_n_k6yl5s.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538220/495076169_1256138163187807_3068178514676809007_n_veklhf.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538220/495051609_1256138043187819_6451987220733864821_n_enqvfw.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538221/494992582_1256138393187784_1590182252341636070_n_yl2qlv.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538221/494711521_1256138396521117_496804629290774588_n_apauie.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538222/494799824_1256138389854451_8352000714387447711_n_y2fivl.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538223/494807066_1256138036521153_7246242609432265731_n_hrxnlt.jpg",
+            "https://res.cloudinary.com/dzklt0a5u/image/upload/v1788538223/494906017_1256138356521121_6220975073433208261_n_ar8xqp.jpg"
+        ],
+        "contact": {
+            "phone": "330-952-0464",
+            "address": "930 W Liberty St, Medina, OH 44256",
+            "hours": "Sunday: 11AM – 8PM\nMonday – Thursday: 11AM – 9PM\nFriday – Saturday: 11AM – 10PM"
+        },
+        "socials": [
+            { "platform": "facebook", "url": "https://www.facebook.com/LosCantaritos930" }
+        ],
+        "paragraphs": {
+            "about": "At Los Cantaritos Mexican Grille, we are passionate about bringing the authentic flavors of Mexico to Medina, Ohio. We prepare fresh, flavorful Mexican dishes using quality ingredients and traditional flavors that make every meal special. Whether you’re joining us for a casual meal with family and friends or simply craving delicious Mexican food, we’re here to make you feel welcome. Come visit us and enjoy a taste of Mexico!"
+        },
+        "titles": {
+            "about-title": "We are Los Cantaritos Mexican Grill",
+            "about-subtitle": "About Us",
+            "gallery-title": "Delicious Mexican Food",
+            "gallery-subtitle": "Love At First Bite",
+            "info-title": "Information & Hours",
+            "info-subtitle": "Visit Us in Medina"
+        },
+        "info": {
+            "hours": "Sunday: 11AM – 8PM\nMonday – Thursday: 11AM – 9PM\nFriday – Saturday: 11AM – 10PM",
+            "phone": "330-952-0464",
+            "address": "930 W Liberty St, Medina, OH 44256"
+        }
+    };
+    </script>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    930 W Liberty St, Medina, OH 44256
+                </span>
+                <span class="top-bar-item">
+                    <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
+                    <a href="tel:3309520464" style="color:inherit;">330-952-0464</a>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item" data-es="¡Auténtico Sabor Mexicano y Coctelería Tradicional!" data-en="Authentic Mexican Flavor & Traditional Cantaritos!">
+                    Authentic Mexican Flavor & Traditional Cantaritos!
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="main-nav">
+        <div class="container nav-container">
+            <a href="#" class="brand-wrapper" id="nav-brand-link">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1788538197/LosCantaritosMexGrillLOGO_1_keuhde.png" alt="Los Cantaritos Mexican Grill Logo" class="brand-logo-img" id="nav-logo">
+                <div class="brand-text">
+                    <span id="nav-brand-sub" data-es="Cocina Tradicional" data-en="Traditional Cuisine">Traditional Cuisine</span>
+                    <strong id="nav-brand-title">Los Cantaritos</strong>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#hero-section" class="nav-link" data-es="Inicio" data-en="Home">Home</a></li>
+                <li><a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About Us">About Us</a></li>
+                <li><a href="#gallery-section" class="nav-link" data-es="Galería" data-en="Gallery">Gallery</a></li>
+                <li><a href="#reviews-section" class="nav-link" data-es="Reseñas" data-en="Reviews">Reviews</a></li>
+                <li><a href="#info-section" class="nav-link" data-es="Ubicación" data-en="Location & Hours">Location & Hours</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" id="lang-en" aria-label="English">EN</button>
+                    <button class="lang-btn" id="lang-es" aria-label="Español">ES</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero-section" style="background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1200/v1788538173/IMG-20260901-WA0040_1_t6bmmz.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-badge" data-es="Medina, Ohio • Sabor 100% Auténtico" data-en="Medina, Ohio • 100% Authentic Flavor">
+                Medina, Ohio • 100% Authentic Flavor
+            </div>
+
+            <div class="hero-logo-wrapper">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1788538197/LosCantaritosMexGrillLOGO_1_keuhde.png" id="hero-logo" alt="Los Cantaritos Logo" class="hero-logo" width="140" height="140">
+            </div>
+
+            <h1 class="hero-title" id="hero-heading" data-es="El Auténtico Sabor de México" data-en="The True Taste of Mexico">
+                The True Taste of Mexico
+            </h1>
+
+            <p class="hero-lead" id="hero-tagline" data-es="Especialidades hechas al momento, recetas de familia y la mejor coctelería tradicional en cantarito de barro." data-en="Handcrafted Mexican classics, sizzling grill platters, and signature cantaritos served in artisan clay.">
+                Handcrafted Mexican classics, sizzling grill platters, and signature cantaritos served in artisan clay.
+            </p>
+
+            <div class="hero-action-group">
+                <a href="https://loscantaritosmexicangrill.onlineordering.io/en?locationId=1541514&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn-order-main" id="btn-main-order-online">
+                    <svg viewBox="0 0 24 24"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z"/></svg>
+                    <span data-es="Ordenar en Línea" data-en="Order Online Now">Order Online Now</span>
+                </a>
+                <a href="#gallery-section" class="btn-secondary-link" data-es="Ver Galería de Platillos" data-en="Explore Specialties">Explore Specialties</a>
+            </div>
+
+            <div class="hero-address-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span id="hero-address">930 W Liberty St, Medina, OH 44256</span>
+            </div>
+        </div>
+
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,60 L1200,120 L0,120 Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="about-card">
+                <div class="about-text-content">
+                    <span class="eyebrow" id="about-subtitle" data-es="NUESTRA HISTORIA" data-en="ABOUT US">ABOUT US</span>
+                    <h2 id="about-title" data-es="Somos Los Cantaritos Mexican Grill" data-en="We are Los Cantaritos Mexican Grill">We are Los Cantaritos Mexican Grill</h2>
+                    
+                    <p class="about-body-text" id="about-p1">
+                        At Los Cantaritos Mexican Grille, we are passionate about bringing the authentic flavors of Mexico to Medina, Ohio. We prepare fresh, flavorful Mexican dishes using quality ingredients and traditional flavors that make every meal special. Whether you’re joining us for a casual meal with family and friends or simply craving delicious Mexican food, we’re here to make you feel welcome. Come visit us and enjoy a taste of Mexico!
+                    </p>
+                </div>
+
+                <div class="about-visuals">
+                    <span class="about-badge-floating" data-es="Medina, OH" data-en="Medina, OH">Medina, OH</span>
+                    <div class="about-img-frame">
+                        <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1788538166/IMG-20260901-WA0024_1_a0u1sh.jpg" alt="Mexican Special Dish" loading="lazy">
+                    </div>
+                    <div class="about-img-frame">
+                        <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1788538168/IMG-20260901-WA0020_1_i9ffqy.jpg" alt="Authentic Mexican Preparation" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow" id="gallery-subtitle" data-es="AMOR AL PRIMER BOCADO" data-en="LOVE AT FIRST BITE">LOVE AT FIRST BITE</span>
+                <h2 class="main-heading" id="gallery-title" data-es="Deliciosa Comida Mexicana" data-en="Delicious Mexican Food">Delicious Mexican Food</h2>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-container">
+                </div>
+        </div>
+    </section>
+
+    <section class="reviews-section" id="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow" data-es="OPINIONES DE CLIENTES" data-en="GOOGLE REVIEWS">GOOGLE REVIEWS</span>
+                <h2 class="main-heading" data-es="Lo que dicen de nosotros en Google" data-en="What Our Guests Say on Google">What Our Guests Say on Google</h2>
+            </div>
+
+            <div class="google-api-header">
+                <div class="google-icon-wrapper">
+                    <svg viewBox="0 0 24 24" width="38" height="38">
+                        <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.665-5.18 3.665-9.15z"/>
+                        <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                        <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                        <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                    </svg>
+                </div>
+                <div class="google-score-summary">
+                    <div class="google-score-num">
+                        4.9
+                        <div class="stars-row">
+                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                    </div>
+                    <span class="google-score-label" data-es="Basado en opiniones reales verificadas de Google Maps" data-en="Verified ratings on Google Maps & Local Guide">Verified ratings on Google Maps & Local Guide</span>
+                </div>
+            </div>
+
+            <div class="carousel-wrapper" id="reviews-carousel">
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="carousel-track">
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar">W</div>
+                                        <div class="reviewer-info">
+                                            <h4>William J. Charnigo <svg class="google-badge-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></h4>
+                                            <div class="reviewer-subtitle" data-es="Local Guide · 439 opiniones · 6,148 fotos" data-en="Local Guide · 439 reviews · 6,148 photos">Local Guide · 439 reviews · 6,148 photos</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-stars-row">
+                                        <div class="stars-row">
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <span class="review-date" data-es="Editado hace 3 días" data-en="Edited 3 days ago">Edited 3 days ago</span>
+                                    </div>
+                                    <div class="review-tags">
+                                        <span class="review-tag" data-es="Consumo en el lugar" data-en="Dine in">Dine in</span>
+                                        <span class="review-tag" data-es="Cena" data-en="Dinner">Dinner</span>
+                                        <span class="review-tag">$20-30</span>
+                                    </div>
+                                    <p class="review-body" data-es="Gran pequeño restaurante mexicano independiente. Buena comida, servicio rápido. Estacionamiento gratuito y un ambiente muy relajante." data-en="Great little Mexican restaurant off by itself. Good food, fast service. Free parking relaxing atmosphere.">
+                                        "Great little Mexican restaurant off by itself. Good food, fast service. Free parking relaxing atmosphere."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar" style="background: linear-gradient(135deg, var(--color-verde) 0%, var(--color-gold) 100%);">K</div>
+                                        <div class="reviewer-info">
+                                            <h4>Katie Taylor <svg class="google-badge-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></h4>
+                                            <div class="reviewer-subtitle" data-es="Local Guide · 30 opiniones" data-en="Local Guide · 30 reviews">Local Guide · 30 reviews</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-stars-row">
+                                        <div class="stars-row">
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <span class="review-date" data-es="Editado hace 5 días" data-en="Edited 5 days ago">Edited 5 days ago</span>
+                                    </div>
+                                    <div class="review-tags">
+                                        <span class="review-tag" data-es="Consumo en el lugar" data-en="Dine in">Dine in</span>
+                                        <span class="review-tag" data-es="Cena" data-en="Dinner">Dinner</span>
+                                        <span class="review-tag">$10-20</span>
+                                    </div>
+                                    <p class="review-body" data-es="Sin duda, el mejor restaurante mexicano en Medina. El lugar es íntimo, pero no dejes que eso te impida probarlo. Me fascina. Gente increíble, excelente servicio y comida fantástica." data-en="Hands down the best Mexican restaurant in Medina. The venue is tiny, but don't let that stop you from giving them a try. Absolutely love this place. Amazing people, great service, and fantastic food.">
+                                        "Hands down the best Mexican restaurant in Medina. The venue is tiny, but don't let that stop you from giving them a try. Absolutely love this place. Amazing people, great service, and fantastic food."
+                                    </p>
+                                </div>
+                                <div class="review-metrics">
+                                    <div class="review-metric-row">
+                                        <span data-es="Comida / Servicio / Ambiente" data-en="Food / Service / Atmosphere">Food / Service / Atmosphere:</span>
+                                        <strong>5/5 • 5/5 • 5/5</strong>
+                                    </div>
+                                    <div class="review-metric-row">
+                                        <span data-es="Tiempo de espera" data-en="Wait time">Wait time:</span>
+                                        <strong data-es="Hasta 10 min" data-en="Up to 10 min">Up to 10 min</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar" style="background: linear-gradient(135deg, #16a085 0%, #2c3e50 100%);">L</div>
+                                        <div class="reviewer-info">
+                                            <h4>LINK0RB <svg class="google-badge-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></h4>
+                                            <div class="reviewer-subtitle" data-es="13 opiniones · 2 fotos" data-en="13 reviews · 2 photos">13 reviews · 2 photos</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-stars-row">
+                                        <div class="stars-row">
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <span class="review-date" data-es="Hace 1 semana" data-en="1 week ago">1 week ago</span>
+                                    </div>
+                                    <div class="review-tags">
+                                        <span class="review-tag" data-es="Nuevo" data-en="New">New</span>
+                                        <span class="review-tag">$10-20</span>
+                                        <span class="review-tag" data-es="Grupo de 2 personas" data-en="Party of 2">Party of 2</span>
+                                    </div>
+                                    <p class="review-body" data-es="El burrito que comí fue posiblemente el mejor burrito de mi vida. ¡Realmente delicioso!" data-en="The burrito I had was maybe the best burrito I have ever had. Very delicious!">
+                                        "The burrito I had was maybe the best burrito I have ever had. Very delicious!"
+                                    </p>
+                                </div>
+                                <div class="review-metrics">
+                                    <div class="review-metric-row">
+                                        <span data-es="Comida / Servicio / Ambiente" data-en="Food / Service / Atmosphere">Food / Service / Atmosphere:</span>
+                                        <strong>5/5 • 5/5 • 5/5</strong>
+                                    </div>
+                                    <div class="review-metric-row">
+                                        <span data-es="Asientos" data-en="Seating">Seating:</span>
+                                        <strong data-es="Comedor cubierto y Bar" data-en="Indoor & Bar area">Indoor & Bar area</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar" style="background: linear-gradient(135deg, #d35400 0%, #c0392b 100%);">J</div>
+                                        <div class="reviewer-info">
+                                            <h4>Joanne Szabo <svg class="google-badge-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></h4>
+                                            <div class="reviewer-subtitle" data-es="Local Guide · 220 opiniones · 72 fotos" data-en="Local Guide · 220 reviews · 72 photos">Local Guide · 220 reviews · 72 photos</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-stars-row">
+                                        <div class="stars-row">
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <span class="review-date" data-es="Editado hace 2 semanas" data-en="Edited 2 weeks ago">Edited 2 weeks ago</span>
+                                    </div>
+                                    <div class="review-tags">
+                                        <span class="review-tag" data-es="Consumo en el lugar" data-en="Dine in">Dine in</span>
+                                        <span class="review-tag" data-es="Cena" data-en="Dinner">Dinner</span>
+                                        <span class="review-tag">$10-20</span>
+                                    </div>
+                                    <p class="review-body" data-es="Nos fascina la comida aquí y las margaritas. El personal de servicio siempre es muy agradable y servicial." data-en="We love the food here and the margaritas. Wait staff is always very pleasant and helpful.">
+                                        "We love the food here and the margaritas. Wait staff is always very pleasant and helpful."
+                                    </p>
+                                </div>
+                                <div class="review-metrics">
+                                    <div class="review-metric-row">
+                                        <span data-es="Comida y Servicio" data-en="Food & Service">Food & Service:</span>
+                                        <strong>5/5 • 5/5</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="review-card">
+                                <div>
+                                    <div class="reviewer-meta">
+                                        <div class="reviewer-avatar" style="background: linear-gradient(135deg, #8e44ad 0%, #2980b9 100%);">G</div>
+                                        <div class="reviewer-info">
+                                            <h4>GUNNERTLC7 <svg class="google-badge-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></h4>
+                                            <div class="reviewer-subtitle" data-es="Local Guide · 44 opiniones · 6 fotos" data-en="Local Guide · 44 reviews · 6 photos">Local Guide · 44 reviews · 6 photos</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-stars-row">
+                                        <div class="stars-row">
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                            <svg class="star-svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                        </div>
+                                        <span class="review-date" data-es="Hace 2 semanas" data-en="2 weeks ago">2 weeks ago</span>
+                                    </div>
+                                    <div class="review-tags">
+                                        <span class="review-tag" data-es="Nuevo" data-en="New">New</span>
+                                        <span class="review-tag" data-es="Porciones Generosas" data-en="Generous Portions">Generous Portions</span>
+                                    </div>
+                                    <p class="review-body" data-es="¡Una maravilla! 10/10. Pedimos el burrito tropical y las carnitas con cebollas y ambos estaban deliciosos. Teníamos mucha hambre y la mitad de los platos sobraron, ¡las porciones son enormes!" data-en="The bomb! 10/10. We got the tropical burrito and the los Carnitos with onions and both were so good. We were hungry and half our plates are leftovers the servings were so big!">
+                                        "The bomb! 10/10. We got the tropical burrito and the los Carnitos with onions and both were so good. We were hungry and half our plates are leftovers the servings were so big!"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="carousel-prev" aria-label="Previous Review">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                    </button>
+                    <div class="carousel-indicators" id="carousel-indicators"></div>
+                    <button class="carousel-btn" id="carousel-next" aria-label="Next Review">
+                        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="info-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow" id="info-subtitle" data-es="VISÍTANOS EN MEDINA" data-en="VISIT US IN MEDINA">VISIT US IN MEDINA</span>
+                <h2 class="main-heading" id="info-title" data-es="Horarios e Información" data-en="Information & Hours">Information & Hours</h2>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-column">
+                    <div class="info-icon-bubble">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    </div>
+                    <h3 data-es="Horarios" data-en="Opening Hours">Opening Hours</h3>
+                    <div class="info-column-content" id="info-hours">
+                        Sunday: 11AM – 8PM<br>
+                        Monday – Thursday: 11AM – 9PM<br>
+                        Friday – Saturday: 11AM – 10PM
+                    </div>
+                </div>
+
+                <div class="info-column">
+                    <div class="info-icon-bubble">
+                        <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+                    </div>
+                    <h3 data-es="Llámanos" data-en="Call Us">Call Us</h3>
+                    <div class="info-column-content">
+                        <p id="info-phone"><a href="tel:3309520464">330-952-0464</a></p>
+                        <p style="margin-top: 8px; font-size: 13.5px;" data-es="Pregunta por nuestras bebidas y especiales diarios." data-en="Call for takeout or specialty party platters.">Call for takeout or specialty party platters.</p>
+                    </div>
+                </div>
+
+                <div class="info-column">
+                    <div class="info-icon-bubble">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    </div>
+                    <h3 data-es="Dirección" data-en="Location">Location</h3>
+                    <div class="info-column-content" id="info-address">
+                        930 W Liberty St<br>
+                        Medina, OH 44256
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="promo-section" style="display: none;"></div>
+    <div id="catering-section" style="display: none;"></div>
+    <div id="delivery-section" style="display: none;"></div>
+    <div id="hero-reservations-wrapper" style="display: none;"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4 id="footer-title">Los Cantaritos Mexican Grill</h4>
+                    <p data-es="Apasionados por llevar los sabores auténticos de México a Medina, Ohio. Preparados con orgullo e ingredientes de primera calidad." data-en="Passionate about bringing authentic Mexican culinary traditions and handcrafted cantaritos to Medina, Ohio.">
+                        Passionate about bringing authentic Mexican culinary traditions and handcrafted cantaritos to Medina, Ohio.
+                    </p>
+                    <div id="social-icons" class="footer-socials">
+                        </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading" data-es="Ubicación y Contacto" data-en="Location & Contact">Location & Contact</h4>
+                    <div class="footer-details">
+                        <p id="footer-address">930 W Liberty St, Medina, OH 44256</p>
+                        <p id="footer-phone" style="margin-top: 8px;">Phone: <a href="tel:3309520464">330-952-0464</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading" data-es="Horarios" data-en="Opening Hours">Opening Hours</h4>
+                    <div class="footer-details" id="footer-hours">
+                        Sunday: 11AM – 8PM<br>
+                        Monday – Thursday: 11AM – 9PM<br>
+                        Friday – Saturday: 11AM – 10PM
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div id="menutech-copyright-container">
+                    <span id="menutech-copyright-text"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+
+            let pathSegments = parts[1].split('/');
+            if (pathSegments.length > 1) {
+                const firstSegment = pathSegments[0];
+                const isVersion = /^v\d+$/.test(firstSegment);
+                const isTransformation = !isVersion && (firstSegment.includes('_') || firstSegment.includes(','));
+                if (isTransformation) {
+                    pathSegments.shift();
+                }
+            }
+            const cleanPath = pathSegments.join('/');
+
+            let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
+            if (options.width) {
+                transformations.push(`w_${options.width}`);
+            } else {
+                transformations.push('w_600');
+            }
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            const transformationString = transformations.join(',');
+            const optimizedUrl = `${parts[0]}/upload/${transformationString}/${cleanPath}`;
+            return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            whatsapp: `<svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.22 8.22 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.44 0-2.85-.38-4.1-1.11l-.29-.17-3.06.81.82-2.98-.19-.3a8.22 8.22 0 0 1-1.26-4.48c0-4.54 3.7-8.23 8.24-8.23m-3.85 3.09c-.21 0-.45.03-.66.24-.21.21-.81.79-.81 1.94s.84 2.25.96 2.41c.12.16 1.63 2.49 3.96 3.5.55.24 1 .38 1.34.49.56.18 1.07.15 1.48.09.45-.06 1.39-.57 1.58-1.12.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.45-.27-.24-.12-1.39-.69-1.61-.77-.22-.08-.37-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.27.18-.51.06-.24-.12-.99-.36-1.89-1.16-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.15.16-.25.24-.42.08-.17.04-.32-.02-.45-.06-.13-.53-1.28-.73-1.75-.19-.48-.39-.41-.53-.42l-.44-.01Z"/></svg>`,
+            tiktok: `<svg viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1v6.2c-.05 2.65-1.18 5.25-3.15 6.95-2.3 2.02-5.63 2.75-8.58 1.83-2.95-.91-5.3-3.37-6.07-6.38-.76-3.01.21-6.34 2.51-8.38 1.94-1.73 4.68-2.48 7.22-1.97v4.13c-1.37-.41-2.92-.22-4.14.54-1.22.76-1.98 2.14-1.96 3.58.01 1.48.86 2.84 2.16 3.49 1.3.65 2.92.51 4.1-.34.91-.65 1.49-1.72 1.52-2.84.05-3.79.02-7.58.03-11.37 0-.02.01-.04.01-.06z"/></svg>`
+        };
+
+        let currentLang = 'en';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-es]').forEach(el => {
+                const targetText = el.getAttribute(`data-${lang}`);
+                if (targetText !== null) {
+                    el.textContent = targetText;
+                }
+            });
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn && enBtn) {
+                if (lang === 'es') {
+                    esBtn.classList.add('active');
+                    enBtn.classList.remove('active');
+                } else {
+                    enBtn.classList.add('active');
+                    esBtn.classList.remove('active');
+                }
+            }
+
+            const fPhone = document.getElementById('footer-phone');
+            if (fPhone && window.MENU_TECH_STATE && window.MENU_TECH_STATE.info) {
+                fPhone.innerHTML = `${lang === 'es' ? 'Teléfono: ' : 'Phone: '}<a href="tel:${window.MENU_TECH_STATE.info.phone.replace(/[^0-9]/g, '')}">${window.MENU_TECH_STATE.info.phone}</a>`;
+            }
+        }
+
+        // Automatic Copyright Engine Range
+        function initMenutechCopyright() {
+            const startYear = 2015;
+            const currentYear = new Date().getFullYear();
+            const yearRange = `${startYear}-${currentYear}`;
+            const copyrightText = `© ${yearRange} Powered by <a href="https://menutech.xyz" target="_blank" rel="noopener" class="menutech-link">Menutech</a>. All Rights Reserved.`;
+            const container = document.getElementById('menutech-copyright-text');
+            if (container) {
+                container.innerHTML = copyrightText;
+            }
+        }
+
+        // Automatic Reviews Carousel Engine
+        function initReviewsCarousel() {
+            const track = document.getElementById('carousel-track');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            const indicatorsContainer = document.getElementById('carousel-indicators');
+            const carouselWrapper = document.getElementById('reviews-carousel');
+
+            if (!track || slides.length === 0) return;
+
+            let currentIndex = 0;
+            let autoSlideInterval = null;
+
+            function getVisibleCount() {
+                if (window.innerWidth <= 768) return 1;
+                if (window.innerWidth <= 992) return 2;
+                return 3;
+            }
+
+            function getMaxIndex() {
+                return Math.max(0, slides.length - getVisibleCount());
+            }
+
+            function renderDots() {
+                indicatorsContainer.innerHTML = '';
+                const maxIndex = getMaxIndex();
+                for (let i = 0; i <= maxIndex; i++) {
+                    const dot = document.createElement('div');
+                    dot.classList.add('carousel-dot');
+                    if (i === currentIndex) dot.classList.add('active');
+                    dot.addEventListener('click', () => {
+                        goToIndex(i);
+                        resetAutoSlide();
+                    });
+                    indicatorsContainer.appendChild(dot);
+                }
+            }
+
+            function updateCarousel() {
+                const maxIndex = getMaxIndex();
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+                const firstSlide = slides[0];
+                const slideWidth = firstSlide.getBoundingClientRect().width;
+                const gap = 24;
+                const offset = currentIndex * (slideWidth + gap);
+
+                track.style.transform = `translateX(-${offset}px)`;
+
+                const dots = document.querySelectorAll('.carousel-dot');
+                dots.forEach((dot, idx) => {
+                    dot.classList.toggle('active', idx === currentIndex);
+                });
+            }
+
+            function nextSlide() {
+                const maxIndex = getMaxIndex();
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                const maxIndex = getMaxIndex();
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = maxIndex;
+                }
+                updateCarousel();
+            }
+
+            function goToIndex(idx) {
+                currentIndex = idx;
+                updateCarousel();
+            }
+
+            function startAutoSlide() {
+                stopAutoSlide();
+                autoSlideInterval = setInterval(nextSlide, 4500);
+            }
+
+            function stopAutoSlide() {
+                if (autoSlideInterval) {
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = null;
+                }
+            }
+
+            function resetAutoSlide() {
+                stopAutoSlide();
+                startAutoSlide();
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    resetAutoSlide();
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    resetAutoSlide();
+                });
+            }
+
+            if (carouselWrapper) {
+                carouselWrapper.addEventListener('mouseenter', stopAutoSlide);
+                carouselWrapper.addEventListener('mouseleave', startAutoSlide);
+                carouselWrapper.addEventListener('touchstart', stopAutoSlide, { passive: true });
+                carouselWrapper.addEventListener('touchend', startAutoSlide, { passive: true });
+            }
+
+            window.addEventListener('resize', () => {
+                renderDots();
+                updateCarousel();
+            });
+
+            renderDots();
+            updateCarousel();
+            startAutoSlide();
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+
+            if (data.lang) {
+                applyLanguage(data.lang);
+            }
+
+            if (data.logoImg) {
+                const navLogo = document.getElementById('nav-logo');
+                const heroLogo = document.getElementById('hero-logo');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 250 });
+                if (navLogo) navLogo.src = optimizedLogo;
+                if (heroLogo) heroLogo.src = optimizedLogo;
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            if (data.heroAddress) {
+                const heroAddr = document.getElementById('hero-address');
+                if (heroAddr) heroAddr.textContent = data.heroAddress;
+            }
+
+            const sections = {
+                'about-section': data.showAbout !== false,
+                'gallery-section': data.showGallery !== false,
+                'info-section': data.showInfo !== false
+            };
+            Object.keys(sections).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = sections[id] ? '' : 'none';
+            });
+
+            if (data.heroImg) {
+                const hero = document.getElementById('hero-section');
+                if (hero) hero.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1400 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img1 = document.getElementById('about-img-1');
+                if (img1) img1.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 600 });
+            }
+            if (data.aboutImg2) {
+                const img2 = document.getElementById('about-img-2');
+                if (img2) img2.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 600 });
+            }
+
+            if (data.gallery && Array.isArray(data.gallery)) {
+                const galleryContainer = document.getElementById('gallery-container');
+                if (galleryContainer) {
+                    galleryContainer.innerHTML = data.gallery.map(imgUrl => `
+                        <div class="gallery-card">
+                            <div class="gallery-img-wrapper">
+                                <img src="${optimizeCloudinaryUrl(imgUrl, { width: 550, height: 550, crop: 'fill' })}" alt="Mexican dish specialty" loading="lazy">
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            }
+
+            if (data.info) {
+                const infoHours = document.getElementById('info-hours');
+                const infoPhone = document.getElementById('info-phone');
+                const infoAddr = document.getElementById('info-address');
+                const footerHours = document.getElementById('footer-hours');
+                const footerPhone = document.getElementById('footer-phone');
+                const footerAddr = document.getElementById('footer-address');
+
+                const formattedHours = (data.info.hours || '').replace(/\n/g, '<br>');
+
+                if (infoHours) infoHours.innerHTML = formattedHours;
+                if (footerHours) footerHours.innerHTML = formattedHours;
+
+                if (infoPhone) infoPhone.innerHTML = `<a href="tel:${(data.info.phone || '').replace(/[^0-9]/g, '')}">${data.info.phone || ''}</a>`;
+                if (footerPhone) footerPhone.innerHTML = `${currentLang === 'es' ? 'Teléfono: ' : 'Phone: '}<a href="tel:${(data.info.phone || '').replace(/[^0-9]/g, '')}">${data.info.phone || ''}</a>`;
+
+                if (infoAddr) infoAddr.innerHTML = (data.info.address || '').replace(/, /g, '<br>');
+                if (footerAddr) footerAddr.textContent = data.info.address || '';
+            }
+
+            if (data.socials && Array.isArray(data.socials)) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => {
+                        let platform = s.platform.toLowerCase();
+                        if (platform === 'twitter' || platform === 'x') {
+                            platform = 'tiktok';
+                        }
+                        const svg = SOCIAL_ICONS[platform] || SOCIAL_ICONS.facebook;
+                        return `
+                            <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="${platform}">
+                                ${svg}
+                            </a>
+                        `;
+                    }).join('');
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initMenutechCopyright();
+            initReviewsCarousel();
+
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
+            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+
+            const toggler = document.getElementById('navbar-toggler');
+            const menu = document.getElementById('nav-menu');
+            if (toggler && menu) {
+                toggler.addEventListener('click', () => {
+                    const isOpened = menu.classList.toggle('active');
+                    toggler.setAttribute('aria-expanded', isOpened ? 'true' : 'false');
+                });
+
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.remove('active');
+                        toggler.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            const nav = document.getElementById('main-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 60) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElem = document.querySelector(targetId);
+                    if (targetElem) {
+                        e.preventDefault();
+                        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+    </script>
+</body>
+</html>
